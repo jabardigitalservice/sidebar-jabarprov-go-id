@@ -1,5 +1,3 @@
-# reservasi-commandcenter-microsite
-
 ## Build Setup
 
 ```bash
