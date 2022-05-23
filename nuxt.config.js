@@ -1,14 +1,5 @@
 export default {
-
-  publicRuntimeConfig: {
-    recaptcha: {
-      /* reCAPTCHA options */
-      siteKey: process.env.GOOGLE_RECAPTCHA_KEY,
-      version: 2
-    }
-  },
-
-
+  target: 'static',
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Sidebar',
@@ -43,6 +34,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
+    '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -52,7 +45,6 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: process.env.API_URL
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
