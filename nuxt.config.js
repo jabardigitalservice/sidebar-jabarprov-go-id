@@ -12,7 +12,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: `SISTEM INFORMASI KEARSIPAN DINAMIS JABAR JUARA`
+        content: 'SISTEM INFORMASI KEARSIPAN DINAMIS JABAR JUARA'
       }
     ],
     link: [
@@ -35,7 +35,9 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc: https://github.com/nuxt-community/eslint-module
+    '@nuxtjs/eslint-module'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
