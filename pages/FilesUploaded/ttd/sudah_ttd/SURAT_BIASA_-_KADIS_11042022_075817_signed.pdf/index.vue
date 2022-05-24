@@ -43,8 +43,8 @@
 export default {
   data () {
     return {
-      countDown : 10,
-      link: 'https://sidebar.jabarprov.go.id'
+      countDown : 5,
+      link: 'https://sidebar.jabarprov.go.id/FilesUploaded/ttd/sudah_ttd/SURAT_BIASA_-_KADIS_11042022_075817_signed.pdf'
     }
   },
   created () {
