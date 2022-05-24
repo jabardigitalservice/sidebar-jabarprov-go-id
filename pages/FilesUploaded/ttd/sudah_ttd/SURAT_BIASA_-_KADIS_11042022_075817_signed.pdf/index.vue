@@ -24,12 +24,12 @@
           {{ countDown }}
         </div>
         <div class="text-gray-600 pb-8">
-          Diharapkan ketika Anda ingin mengakses website SIDEBAR, Anda dapat langsung 
-          <br>menggunakan link ini 
-          <a 
-            class="underline decoration-3" 
-            :href="link" 
-            target="_blank" 
+          Diharapkan ketika Anda ingin mengakses website SIDEBAR, Anda dapat langsung
+          <br>menggunakan link ini
+          <a
+            class="underline decoration-3"
+            :href="link"
+            target="_blank"
             rel="noopener noreferrer"
           >
             {{ link }}
@@ -43,7 +43,7 @@
 export default {
   data () {
     return {
-      countDown : 5,
+      countDown: 5,
       link: 'https://sidebar.jabarprov.go.id/FilesUploaded/ttd/sudah_ttd/SURAT_BIASA_-_KADIS_11042022_075817_signed.pdf'
     }
   },
@@ -51,18 +51,18 @@ export default {
     this.countDownTimer()
   },
   methods: {
-    countDownTimer() {
+    countDownTimer () {
       if (this.countDown > 0) {
-        return setTimeout(() => {
+        setTimeout(() => {
           this.countDown -= 1
           this.countDownTimer()
         }, 1000)
-      } else {
-        return location.replace(this.link, '_blank')
+      } else if (process.client) {
+        location.replace(this.link, '_blank')
       }
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
